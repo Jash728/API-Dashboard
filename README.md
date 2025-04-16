@@ -72,3 +72,18 @@ https://darling-beignet-00cfd4.netlify.app/
 - Frontend deployed on Netlify
 
 - Backend deployed on Render
+
+### 🔐 Demo Credentials
+   ```bash
+   const brands = [
+  {
+    name: "Brand One",
+    email: "brand1@example.com",
+    password: "password1",
+  },
+  {
+    name: "Brand Two",
+    email: "brand2@example.com",
+    password: "password2",
+  },
+];
