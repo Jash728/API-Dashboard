@@ -17,7 +17,7 @@ A beautiful, responsive dashboard for visualizing API usage analytics including 
 
 ## 📸 Demo
 
-![Dashboard Screenshot](./demo/dashboard-screenshot.png)
+https://darling-beignet-00cfd4.netlify.app/
 
 ## 🛠️ Tech Stack
 
@@ -39,45 +39,36 @@ A beautiful, responsive dashboard for visualizing API usage analytics including 
    git clone https://github.com/Jash728/API-Dashboard.git
    cd API-Dashboard/backend
 
-Install dependencies:
+2. Install dependencies:
+     ```bash
+   npm install
 
-npm install
+3. Create a .env file in the backend directory and add:
+   ```bash
+   PORT=5000
+   MONGO_URI=your_mongodb_uri
+   JWT_SECRET=your_secret
+
+4. Start the server:
+   ```bash
+   npm start
+
+### 💻 Frontend Setup
+
+1. Navigate to the frontend folder:
+   ```bash
+   cd frontend
+
+2. Install dependencies:
+     ```bash
+   npm install
+
+3. Start the Reach App:
+   ```bash
+   npm start
 
 
-ini
-Copy
-Edit
-PORT=5000
-MONGO_URI=your_mongodb_uri
-JWT_SECRET=your_secret
-Start the server:
+### 📤 Deployment
+- Frontend deployed on Netlify
 
-bash
-Copy
-Edit
-npm start
-💻 Frontend Setup
-In the root of the project:
-
-bash
-Copy
-Edit
-cd frontend
-Install dependencies:
-
-bash
-Copy
-Edit
-npm install
-Start the client:
-
-bash
-Copy
-Edit
-npm start
-App will be running at http://localhost:3000
-
-📤 Deployment
-Frontend deployed on Netlify
-
-Backend deployed on Render
+- Backend deployed on Render
