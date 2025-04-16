@@ -9,7 +9,7 @@ dotenv.config();
 const seedData = async () => {
   try {
     await mongoose.connect(process.env.MONGO_URI);
-    console.log("✅ MongoDB connected");
+    console.log("MongoDB connected");
 
     
     await Brand.deleteMany({});
@@ -43,7 +43,7 @@ const seedData = async () => {
       })
     );
 
-    console.log("✅ Brands seeded");
+    console.log("Brands seeded");
 
     
     const usageDataPerBrand = [
@@ -88,12 +88,12 @@ const seedData = async () => {
       await usage.save();
     }
 
-    console.log("✅ Usage data seeded for each brand");
+    console.log("Usage data seeded for each brand");
 
     await mongoose.disconnect();
-    console.log("🔌 MongoDB disconnected");
+    console.log("MongoDB disconnected");
   } catch (error) {
-    console.error("❌ Seeding error:", error);
+    console.error(" Seeding error:", error);
     await mongoose.disconnect();
   }
 };

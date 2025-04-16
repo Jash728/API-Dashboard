@@ -1,7 +1,7 @@
 import React from "react";
 import { PieChart, Pie, Cell, Legend, Tooltip } from "recharts";
 
-const COLORS = ["#00C49F", "#FF4C4C"]; // Success green, Error red
+const COLORS = ["#00C49F", "#FF4C4C"]; 
 
 const PieChartComponent = ({ success, failed }) => {
   const data = [

@@ -24,7 +24,7 @@ const Dashboard = () => {
       setLoading(true);
       const token = localStorage.getItem("token");
       const res = await axios.get(
-        `http://localhost:5000/api/usage?period=${selectedPeriod}`,
+        `https://api-dashboard-1.onrender.com/api/usage?period=${selectedPeriod}`,
         {
           headers: {
             Authorization: `Bearer ${token}`,
